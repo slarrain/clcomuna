@@ -1,5 +1,9 @@
 from setuptools import setup
 
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
 setup(name='clcomuna',
       version='0.1',
       description='Given the name of a comuna in Chile, it returns its code',
@@ -8,4 +12,8 @@ setup(name='clcomuna',
       author_email='santiagolarrain@gmail.com',
       license='MIT',
       packages=['clcomuna'],
+      install_requires=[
+          'fuzzywuzzy',
+      ],
+      data_files=[('data', ['comunas.csv'])],
       zip_safe=False)
