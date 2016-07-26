@@ -1,0 +1,15 @@
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg
+
+# Other files
+build/
+clcomuna/.ipynb_checkpoints/
+clcomuna/codigo_comunas_2.csv
+clcomuna/codigos-comuna-y-nombre.csv

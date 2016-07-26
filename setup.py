@@ -15,5 +15,8 @@ setup(name='clcomuna',
       install_requires=[
           'fuzzywuzzy',
       ],
-      data_files=[('data', ['comunas.csv'])],
+      #data_files=[('data', ['comunas.csv'])],
+      include_package_data=True,
+      test_suite='nose.collector',
+      tests_require=['nose'],
       zip_safe=False)
