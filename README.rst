@@ -22,22 +22,19 @@ I added a fuzzy version for cases where there was no exact match.
 
 Features
 --------
-    - Given a comuna name, it returns its code, taking care of special characters, uppercases and lowercases.
-    - If it doesn't find an exact match, it prints that and returns None
-    - A fuzzy function returns the best match (uses fuzzywuzzy)
-    - You can specify to print the score of the fuzzy match
-    - You can specify a threshold above which it should return a match and below which it shouldn't.
-    - There is a function that tries the exact match and if it doesn't find it,
-    it goes to the fuzzy version.
-    - The list of comunas-code is a simple CSV file for easier edition.
-    - If you want some comuna name version added to the csv file, just contact me
-    and I'll add them right away.
+- Given a comuna name, it returns its code, taking care of special characters, uppercases and lowercases.
+- If it doesn't find an exact match, it prints that and returns None
+- A fuzzy function returns the best match (uses fuzzywuzzy)
+- You can specify to print the score of the fuzzy match
+- You can specify a threshold above which it should return a match and below which it shouldn't.
+- There is a function that tries the exact match and if it doesn't find it, it goes to the fuzzy version.
+- The list of comunas-code is a simple CSV file for easier edition.
+- If you want some comuna name version added to the csv file, just contact me and I'll add them right away.
 
 Installation
 ------------
 
-::
-    pip3 install clcomuna
+:: pip3 install clcomuna
 
 Requirements
 ------------
@@ -47,7 +44,7 @@ Requirements
 
 
 
-Usage::
+Usage:
 
     >>> import clcomuna
 
