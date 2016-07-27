@@ -39,41 +39,42 @@ Installation
 Requirements
 ------------
 
-    - fuzzywuzzy
-    - Python3.3+
+- fuzzywuzzy
+- Python3.3+
 
 
 
 Usage:
+------
 
-    >>> import clcomuna
+>>> import clcomuna
 
-    (If there is a warning, ignore it. It comes with a dependency)
+(If there is a warning, ignore it. It comes with the dependency)
 
-    **get_code**
+**get_code**
 
-    >>> clcomuna.get_code("peumo")
-    '06112'
+>>> clcomuna.get_code("peumo")
+'06112'
 
-    **get_fuzzy**: returns name, not code
+**get_fuzzy**: returns name, not code
 
-    >>> clcomuna.get_fuzzy("alragobo")
-    'ALGARROBO'
-    >>> clcomuna.get_fuzzy("alragobo", True)
-    ('ALGARROBO', 71)
-    'ALGARROBO'
-    >>> clcomuna.get_fuzzy("alragobo", True, 72)
-    ('ALGARROBO', 71)
-    Score lower than minimum threshold for comuna: ALRAGOBO - ALGARROBO
+>>> clcomuna.get_fuzzy("alragobo")
+'ALGARROBO'
+>>> clcomuna.get_fuzzy("alragobo", True)
+('ALGARROBO', 71)
+'ALGARROBO'
+>>> clcomuna.get_fuzzy("alragobo", True, 72)
+('ALGARROBO', 71)
+Score lower than minimum threshold for comuna: ALRAGOBO - ALGARROBO
 
-    The optional second parameter *True* prints the found comuna and the score.
-    The optional third parameter *int* stablishes a threshold for the function to
-    return the best name match
+The optional second parameter *True* prints the found comuna and the score.
+The optional third parameter *int* stablishes a threshold for the function to
+return the best name match
 
-    **get_steps**
+**get_steps**
 
-    >>> clcomuna.get_steps("alragobo")
-    Could not find code for:  ALRAGOBO
-    'ALGARROBO'
-    >>> clcomuna.get_fuzzy("alragobo", False, 74)
-    Score lower than minimum threshold for comuna: ALRAGOBO - ALGARROBO
+>>> clcomuna.get_steps("alragobo")
+Could not find code for:  ALRAGOBO
+'ALGARROBO'
+>>> clcomuna.get_fuzzy("alragobo", False, 74)
+Score lower than minimum threshold for comuna: ALRAGOBO - ALGARROBO
