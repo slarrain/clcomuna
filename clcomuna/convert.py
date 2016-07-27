@@ -49,6 +49,7 @@ def get_fuzzy(name, show=False, threshold=False):
     '''
     Returns the most similar comuna name.
     Uses the fuzzywuzzy package
+    Returns the name (string)
     '''
 
     comuna = remove_accents(name).upper()
@@ -64,15 +65,18 @@ def get_fuzzy(name, show=False, threshold=False):
         if best_match[1]<threshold:
             print ("Score lower than minimum threshold for comuna: {0} - {1}".format(comuna, best_match[0]))
             return None
-    return best_match[0]    #Only the name
+    return best_match[0]    # The name
 
 def get_steps(name, show=False, threshold=False):
     '''
     A wrapper mtehod that uses the 'get_code' function first
     and if it fails, it tries the 'get_fuzzy method'
+    Returns the code
     '''
 
     comuna = get_code(name)
     if comuna==None:
         comuna = get_fuzzy(name, show, threshold)
+        if comuna:
+            comuna = get_code(comuna)
     return comuna

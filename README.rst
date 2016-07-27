@@ -33,8 +33,9 @@ Features
 
 Installation
 ------------
-
-:: pip3 install clcomuna
+::
+    
+    pip3 install clcomuna
 
 Requirements
 ------------
