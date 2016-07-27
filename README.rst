@@ -1,7 +1,7 @@
 .. image:: https://travis-ci.org/slarrain/clcomuna.svg?branch=master
     :target: https://travis-ci.org/slarrain/clcomuna
 
-.. image:: https://img.shields.io/badge/pypy-0.3.1-blue.svg
+.. image:: https://img.shields.io/badge/pypy-1.0-blue.svg
     :target: https://pypi.python.org/pypi/clcomuna
 
 clcomuna
@@ -34,7 +34,7 @@ Features
 Installation
 ------------
 ::
-    
+
     pip3 install clcomuna
 
 Requirements
