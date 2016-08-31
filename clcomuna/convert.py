@@ -1,7 +1,10 @@
 import unicodedata
 import csv
-from fuzzywuzzy import process
 from pkg_resources import resource_filename # For the right filename
+
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
+from fuzzywuzzy import process
 
 def remove_accents(input_str):
     '''
@@ -80,3 +83,15 @@ def get_steps(name, show=False, threshold=False):
         if comuna:
             comuna = get_code(comuna)
     return comuna
+
+def get_name(code):
+    '''
+    Given a comuna code (string), returns its name
+    '''
+    assert type(code) == str
+    comunas = comunas_dict()
+    for comuna in comunas:
+        if code == comunas[comuna]:
+            return comuna
+    print ("No Comuna by that code")
+    return None
