@@ -7,7 +7,7 @@ def readme():
 setup(name='clcomuna',
       version='1.1.1',
       description='Given the name of a comuna in Chile, it returns its code',
-      long_description="README.rst"
+      long_description="README.rst",
       url='http://github.com/slarrain/clcomuna',
       author='Santiago Larrain',
       author_email='santiagolarrain@gmail.com',
