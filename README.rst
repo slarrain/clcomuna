@@ -1,7 +1,7 @@
 .. image:: https://travis-ci.org/slarrain/clcomuna.svg?branch=master
     :target: https://travis-ci.org/slarrain/clcomuna
 
-.. image:: https://img.shields.io/badge/pypy-1.0-blue.svg
+.. image:: https://img.shields.io/badge/pypy-1.1-blue.svg
     :target: https://pypi.python.org/pypi/clcomuna
 
 clcomuna
@@ -77,5 +77,5 @@ return the best name match
 >>> clcomuna.get_steps("alragobo")
 Could not find code for:  ALRAGOBO
 'ALGARROBO'
->>> clcomuna.get_fuzzy("alragobo", False, 74)
+>>> clcomuna.get_steps("alragobo", False, 74)
 Score lower than minimum threshold for comuna: ALRAGOBO - ALGARROBO

@@ -1,2 +1,4 @@
 include README.rst
 include data/comunas.csv
+include comunas.csv
+include clcomuna/comunas.csv

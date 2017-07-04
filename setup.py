@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='clcomuna',
-      version='1.0',
+      version='1.1',
       description='Given the name of a comuna in Chile, it returns its code',
       url='http://github.com/slarrain/clcomuna',
       author='Santiago Larrain',

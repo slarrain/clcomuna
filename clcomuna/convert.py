@@ -25,7 +25,7 @@ def comunas_dict():
 
     # This is so it gets the correct path+filename and
     # it actually works
-    filename = resource_filename(__name__, '../data/comunas.csv')
+    filename = resource_filename(__name__, 'comunas.csv')
 
     with open(filename, newline='') as csvfile:
         data = csv.reader(csvfile, delimiter=',')
